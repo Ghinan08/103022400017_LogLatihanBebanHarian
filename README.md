@@ -15,5 +15,5 @@ NestJS REST API, data disimpan di PostgreSQL melalui Prisma ORM.
 GET/POST /latihan · GET/PATCH/DELETE /latihan/:id · GET /latihan?target= · GET /latihan/statistik
 
 ## Screenshot
-![Migrasi](docs/screenshots/3.2-Outputterminalmigratedev.png)
+![Migrasi](docs/screenshots/3.2 - Output terminal migrate dev.png)
 ... (SS-01 sampai SS-13)
