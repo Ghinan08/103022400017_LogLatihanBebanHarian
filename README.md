@@ -1,16 +1,19 @@
-# React + Vite
+# Log Latihan Beban Harian
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi web untuk mencatat latihan beban harian: nama gerakan, target otot,
+dan jumlah set, dengan statistik total set. Frontend React + Vite, backend
+NestJS REST API, data disimpan di PostgreSQL melalui Prisma ORM.
 
-Currently, two official plugins are available:
+## Cara menjalankan
+1. Buat database PostgreSQL `log_latihan`
+2. `cd backend && cp .env.example .env` (isi password)
+3. `npm install && npx prisma migrate dev && npx prisma generate`
+4. `npm run start:dev`
+5. `cd frontend && npm install && npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Endpoint
+GET/POST /latihan · GET/PATCH/DELETE /latihan/:id · GET /latihan?target= · GET /latihan/statistik
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Screenshot
+![Migrasi](docs/screenshots/3.2-Outputterminalmigratedev.png)
+... (SS-01 sampai SS-13)
